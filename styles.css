@@ -1,6 +1,8 @@
 * {
   background-color: black;
   color: white;
+  font-family: "sora", sans-serif;
+  margin: 20px;
 }
 
 header {
@@ -13,28 +15,52 @@ header {
 
 header img {
   margin-left: 10px;
-  max-width: 250px;
-  max-height: 80px;
+  max-width: 280px;
+  max-height: 100px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 nav ul li {
   margin: 0 10px;
 }
+
+.hero {
+  background-color: #2ab39a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.hero-content {
+  background-color: #2ab39a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* .hero h1 {
+  background-color: transparent;
+  font-size: 3rem;
+  text-align: center;
+} */
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
