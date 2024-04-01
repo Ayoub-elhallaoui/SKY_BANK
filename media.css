@@ -1,0 +1,14 @@
+/* Desktop */
+@media (min-width: 1025px) {
+    /* Your desktop styles go here */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Your tablet styles go here */
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    /* Your mobile styles go here */
+}
