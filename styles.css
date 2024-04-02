@@ -1,12 +1,15 @@
 :root {
   --primary-color: #2ab39a;
   --base-font-size: 16px;
+  --secondary-color: #f9f9f9;
+  --font-family: "sora", sans-serif;
+  
 }
 
 * {
   background-color: black;
   color: white;
-  font-family: "sora", sans-serif;
+  font-family: var(--font-family);
   margin: 20px;
   font-size: var(--base-font-size);
 }
