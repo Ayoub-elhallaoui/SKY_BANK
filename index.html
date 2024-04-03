@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <title>SKY BANK</title>
-</head>
-<header>
-    <a href="index.html" class="logo">
-        <img src="./assets/logo.png" alt="logo">
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./media.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
 
+    <title>SKY BANK</title>
+  </head>
+  <header>
     <nav>
-        <ul>
-            <li>Why Us ?</li>
-            <li>Advantages</li>
-            <li>Our Values</li>
-            <li>Partners</li>
-            <li>Pricing</li>
-        </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a>Why Us ?</a></li>
+        <li><a>Advantages</a></li>
+        <li><a>Our Values</a></li>
+        <li><a>Partners</a></li>
+        <li><a>Pricing</a></li>
+      </ul>
+      <button type="button" class="btnheader">Join Us</button>
+      <ul>
+        <li>
+          <a href="index.html" class="logo">
+            <img src="./assets/logo.png" alt="logo" />
+          </a>
+        </li>
+        <li class="hideOnMobile"><a href="#">Why Us ?</a></li>
+        <li class="hideOnMobile"><a href="#">Advantages</a></li>
+        <li class="hideOnMobile"><a href="#">Our Values</a></li>
+        <li class="hideOnMobile"><a href="#">Partners</a></li>
+        <li class="hideOnMobile"><a href="#">Pricing</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+      <input
+        type="checkbox"
+        role="button"
+        aria-label="Display the menu"
+        class="menu"
+      />
     </nav>
-</header>
-<body>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </header>
+
+  <body>
     <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to SKY BANK</h1>
-            <p>Experience the best banking services</p>
-            <a href="#" class="btn">Get Started</a>
-        </div>
+      <div class="hero-content">
+        <h1><b>Order</b>Your Financial Future Today.<b>Take</b>the Leap!</h1>
+        <p>
+          Discover the power of our secure and rewarding credit cards. Explore
+          our range of credit cards and take control of your finances today.
+        </p>
+        <button type="button" class="btnheader">Join Us</button>
+        <img
+          src="./assets/credit-card.png"
+          alt="credit card"
+          style="background-color: transparent"
+        />
+      </div>
     </section>
-</body>
+  </body>
 </html>
