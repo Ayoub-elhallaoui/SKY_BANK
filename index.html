@@ -1,11 +1,754 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html class="scroll-smooth focus:scroll-auto scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>SKY BANK</title>
+    <link rel="shortcut icon" type="x-icon" href="./assets/icons/Favicon.svg" />
+  </head>
+
+  <body class="font-[Poppins] bg-black h-screen">
+    <header class="bg-transparant">
+      <nav class="flex justify-between items-center w-[92%] mx-auto text-white">
+        <div>
+          <img
+            class="w-50 h-20 cursor-pointer"
+            src="./assets/logo.png"
+            alt="..."
+          />
+        </div>
+        <div
+          class="nav-links duration-500 md:static absolute bg-black bg-opacity-90 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:text-sm md:gap-[2vw] gap-4 bg-transparant"
+          >
+            <li>
+              <a class="hover:text-[#2AB39A]" href="#Why-Us">Why Us?</a>
+            </li>
+            <li>
+              <a class="hover:text-[#2AB39A]" href="#Advantages">Advantages</a>
+            </li>
+            <li>
+              <a class="hover:text-[#2AB39A]" href="#Values">Our Values</a>
+            </li>
+            <li>
+              <a class="hover:text-[#2AB39A]" href="#Partners">Partners</a>
+            </li>
+            <li>
+              <a class="hover:text-[#2AB39A]" href="#Pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#sign-in">
+            <button
+              class="bg-[#2AB39A] text-white px-5 py-2 rounded-full hover:bg-[#87ACEC]"
+            >
+              Sign in
+            </button>
+          </a>
+          <ion-icon
+            onclick="onToggleMenu()"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <section class="flex justify-center">
+      <div
+        name="holder"
+        class="flex flex-col justify-center place-content-center space-between mx-12 bg-[#2AB39A] items-center rounded-3xl w-full md:w-50 lg:w-50"
+      >
+        <h1 class="text-2xl mt-4 font-extrabold text-center px-8 py-3">
+          <b class="text-white">Order</b> Your Financial Future Today.<b
+            class="text-white"
+            >Take</b
+          >
+          the Leap!
+        </h1>
+        <h4
+          class="text-1xl mt-2 flex text-center place-content-center px-10 py-3"
+        >
+          Discover the power of our secure and rewarding credit cards. Explore
+          our range of credit cards and take control of your finances today.
+        </h4>
+        <div
+          class="bg-white flex w-40 mt-10 text-black justify-center py-3 border-1 rounded-full hover:bg-[#87ACEC] font-semibold text-lg"
+        >
+          <button>Get Started</button>
+        </div>
+        <img src="./assets/credit-card.png" class="h-auto w-30 my-5" />
+      </div>
+    </section>
+
+    <section id="Why-Us" class="flex justify-center">
+      <div
+        class="flex flex-col justify-center place-content-center mt-4 mx-12 w-full md:w-50 lg:w-50"
+      >
+        <h1 class="text-2xl mt-4 text-white text-center font-medium">
+          Why <b class="text-[#2AB39A]">SKY</b> BANK?
+        </h1>
+        <p
+          class="text-xs mt-2 place-content-center text-white text-center font-regular"
+        >
+          Seamlessly connect, transfer, and pay with Sky Bank's all-in-one
+          solution, ensuring simplicity in every transaction. Experience
+          effortless financial management with our streamlined approach,
+          designed to simplify your financial life.
+        </p>
+        <img src="./assets/boundaries.svg " class="h-auto w-auto lg:mt-8" />
+      </div>
+    </section>
+
+    <section id="Advantages" class="flex justify-center lg:mx-12">
+      <div
+        name="holder"
+        class="flex flex-col mt-5 bg-transparant rounded-3xl w-full md:w-full lg:w-full lg:mt-16 md:mt-16"
+      >
+        <h1 class="text-2xl text-center text-white font-extrabold mb-4">
+          <b class="text-[#2AB39A]">SKY</b> BANK Advantages
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 mx-6">
+          <div class="flex flex-col items-start justify-between">
+            <img src="./assets/icons/card.svg" class="w-16" alt="Card Icon" />
+            <h2 class="text-white font-medium mt-4">
+              Virtual and physical cards
+            </h2>
+            <p class="text-xs text-white font-regular mt-2">
+              Virtual and physical cards offer flexible payment options,
+              bridging digital and tangible worlds for seamless transactions.
+            </p>
+          </div>
+          <div class="flex flex-col items-start justify-between">
+            <img
+              src="./assets/icons/process.svg"
+              class="w-11"
+              alt="Process Icon"
+            />
+            <h2 class="text-white font-medium mt-4">Simplified process</h2>
+            <p class="text-xs text-white font-regular mt-2">
+              Virtual and physical cards streamline transactions with simplified
+              processes, enhancing convenience for users across digital and
+              traditional payment platforms.
+            </p>
+          </div>
+          <div class="flex flex-col items-start justify-between">
+            <img src="./assets/icons/send.svg" class="w-16" alt="Send Icon" />
+            <h2 class="text-white font-medium mt-4">Immediate transfer</h2>
+            <p class="text-xs text-white font-regular mt-2">
+              Virtual and physical cards enable immediate transfer of funds,
+              facilitating swift transactions and financial fluidity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Values" class="flex justify-center lg:mx-12">
+      <div
+        name="holder"
+        class="flex flex-col space-between mt-5 mx-12 rounded-3xl w-full md:w-full lg:w-full md:mt-16"
+      >
+        <h1 class="text-2xl text-center text-white font-extrabold mt-10">
+          Our <b class="text-[#2AB39A]">Values</b>
+        </h1>
+        <div
+          class="flex flex-col lg:flex-row items-center md:flex-row mt-0 md:gap-4 justify-center"
+        >
+          <img
+            src="./assets/handshake.svg"
+            class="lg:w-[60%] md:flex-row md:w-[60%] mb-6 lg:mb-0 mt-6 lg:mr-8 w-full"
+            alt="Handshake Image"
+          />
+          <div
+            class="lg:w-[40%] flex justify-between flex-col lg:gap-8 md:gap-6 md:w-1/2"
+          >
+            <p class="text-sm lg:text-base text-white font-light mb-4">
+              <b class="font-bold">01-Innovation for All:</b> At Sky bank, we
+              pioneer financial solutions that empower everyone.
+            </p>
+            <p class="text-sm lg:text-base text-white font-light mb-4">
+              <b class="font-bold">02-Beyond Banking:</b> Our mission is to
+              break barriers and create financial opportunities for all.
+            </p>
+            <p class="text-sm lg:text-base text-white font-light mb-4">
+              <b class="font-bold">03-Empowering Futures:</b> Our mission is
+              simple - to make financial freedom a reality for all.
+            </p>
+            <p class="text-sm lg:text-base text-white font-light">
+              <b class="font-bold">04-Empowering Futures:</b> Our mission is
+              simple - to make financial freedom a reality for all.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center mt-2 lg:items-center lg:flex lg:justify-center"
+        >
+          <button
+            class="bg-[#2AB39A] text-black font-medium px-4 py-1.5 rounded-full hover:bg-[#158EA9] lg:w-[20%] md:w-[50%] lg:justify-center w-full"
+          >
+            Pre-register
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Partners"
+      class="flex flex-col justify-center items-center content-center bg-transparant lg:mx-12"
+    >
+      <h1 class="text-2xl text-center text-white font-extrabold mt-10">
+        Our <b class="text-[#2AB39A]">Values</b>
+      </h1>
+      <div
+        name="holder"
+        class="flex flex-col space-between mt-5 mx-12 bg-transparent rounded-3xl w-full md:w-50 lg:w-50 lg:flex lg:flex-row lg:justify-between lg:px-10"
+      >
+        <div class="flex justify-center items-center mt-0">
+          <img src="./assets/partners/layer.svg" class="w-80 h-80" />
+          <img
+            src="./assets/partners/visa.svg"
+            class="absolute w-70 h-70 md:h-3/12 md:w-3/12 lg:w-60 lg:h-60"
+          />
+        </div>
+        <div class="flex justify-center items-center mt-0 md:flex-row">
+          <img src="./assets/partners/layer.svg" class="w-80 h-80" />
+          <img
+            src="./assets/partners/mastercard.svg"
+            class="absolute w-70 h-70"
+          />
+        </div>
+        <div class="flex justify-center items-center mt-0">
+          <img src="./assets/partners/layer.svg" class="w-80 h-80 relative" />
+          <img src="./assets/partners/stripe.svg" class="absolute w-70 h-70" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Mobile version -->
+    <section
+      id=""
+      class="flex flex-col justify-center items-center content-center lg:hidden"
+    >
+      <div
+        name="holder"
+        class="flex flex-col space-between mt-5 mx-12 bg-transparent rounded-3xl w-full md:w-50 lg:w-50"
+      >
+        <h1 class="text-2xl text-center text-white font-extrabold mt-10">
+          Our <b class="text-[#2AB39A]">Pricing</b> package
+        </h1>
+
+        <div
+          class="flex flex-col items-center text-balance mt-4 bg-gradient-to-r from-[#65633b] to-[#7c7b4a] rounded-lg mx-9"
+        >
+          <div class="flex flex-row items-center mt-8">
+            <img src="./assets/pricing/bronze.svg" class="mr-2" />
+            <div class="flex flex-col items-center">
+              <h3 name="Packages" class="text-white">Bronze</h3>
+              <p name="Price" class="text-white">($5.99/month)</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-4">
+            <button
+              class="bg-[#060c0b] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#52595b]"
+            >
+              Pre-register
+            </button>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Creation of RIB/IBAN
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">Debit Card</p>
+            <p name="price" class="text-white text-end">$20.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">virtual Card</p>
+            <p name="price" class="text-white text-end">$3.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">AppleGoogle Pay</p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">Paiement zone Euro</p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Incoming/Outgoing Transactions
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Outgoing instant switches
+            </p>
+            <p name="price" class="text-white text-end">$2.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Transfer to another Skybank user (instant)
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              International transfer fees
+            </p>
+            <p name="price" class="text-white text-end">$6.00</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center text-balance mt-4 bg-gradient-to-r from-[#2AB39A] to-[#124D42] rounded-lg mx-9"
+        >
+          <div class="flex flex-row items-center mt-8">
+            <img src="./assets/pricing/silver.svg" class="mr-2" />
+            <div class="flex flex-col items-center">
+              <h3 name="Packages" class="text-white">Silver</h3>
+              <p name="Price" class="text-white">($9.99/month)</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-4">
+            <button
+              class="bg-[#060c0b] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#54c7c3]"
+            >
+              Pre-register
+            </button>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Creation of RIB/IBAN
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">Debit Card</p>
+            <p name="price" class="text-white text-end">$20.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">virtual Card</p>
+            <p name="price" class="text-white text-end">$3.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">AppleGoogle Pay</p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">Paiement zone Euro</p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Incoming/Outgoing Transactions
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Outgoing instant switches
+            </p>
+            <p name="price" class="text-white text-end">$2.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Transfer to another Skybank user (instant)
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              International transfer fees
+            </p>
+            <p name="price" class="text-white text-end">$6.00</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center text-balance mt-4 bg-gradient-to-r from-[#373f3e] to-[#101816] rounded-lg mx-9"
+        >
+          <div class="flex flex-row items-center mt-8">
+            <img src="./assets/pricing/platinum.svg" class="mr-2" />
+            <div class="flex flex-col items-center">
+              <h3 name="Packages" class="text-white">Platinum</h3>
+              <p name="Price" class="text-white">($18.99/month)</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-4">
+            <button
+              class="bg-[#070909] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#40ad9d]"
+            >
+              Pre-register
+            </button>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Creation of RIB/IBAN
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">Debit Card</p>
+            <p name="price" class="text-white text-end">$20.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">virtual Card</p>
+            <p name="price" class="text-white text-end">$3.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">AppleGoogle Pay</p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">Paiement zone Euro</p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Incoming/Outgoing Transactions
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Outgoing instant switches
+            </p>
+            <p name="price" class="text-white text-end">$2.00</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              Transfer to another Skybank user (instant)
+            </p>
+            <p name="price" class="text-white text-end">Free</p>
+          </div>
+          <div class="flex justify-between flex-row w-full px-4 py-1.5">
+            <p name="offer" class="text-white text-start">
+              International transfer fees
+            </p>
+            <p name="price" class="text-white text-end">$6.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Deskrop version -->
+    <section id="Pricing" class="w-full lg:flex lg:flex-col hidden">
+      <h1 class="text-2xl text-center text-white font-extrabold w-full">
+        Our <b class="text-[#2AB39A]">Pricing</b> package
+      </h1>
+      <div class="flex flex-row gap-8 px-7 w-full">
+        <div
+          style="background-color: #2e4e5a23"
+          class="text-white basis-1/4 rounded-2xl p-10 mt-5"
+        >
+          <ul>
+            <li class="font-bold mt-6 mb-20">characteristics</li>
+            <li class="font-bold mb-2">Account</li>
+            <li class="text-xm mb-4">creation of RIB/IBAN</li>
+            <li class="font-bold mb-2">Cards</li>
+            <li class="text-xm mb-2">Debit Card</li>
+            <li class="text-xm mb-4">Virtual Card</li>
+            <li class="font-bold mb-2">Payment</li>
+            <li class="text-xm mb-2">Apple/google Pay</li>
+            <li class="text-xm mb-4">Pay with Dolllar</li>
+            <li class="font-bold mb-2">Transfer</li>
+            <li class="text-xm mb-2">
+              Incoming/outgoing transfers (Euro Zone)
+            </li>
+            <li class="text-xm mb-2">Instant outgoing transfers</li>
+            <li class="text-xm mb-2">
+              Transfer to another planet user (instant)
+            </li>
+            <li class="text-xm mb-2">International Transfer Fees</li>
+          </ul>
+        </div>
+        <div
+          class="text-white bg-gradient-to-r from-[#65633b] to-[#7c7b4a] basis-1/4 rounded-2xl p-5 mt-5"
+        >
+          <ul>
+            <li class="mb-4 flex items-center">
+              <img
+                src="./assets/pricing/bronze.svg"
+                alt=""
+                style="display: inline-block; margin-right: 10px"
+              />
+              <p class="text-xm text-white mb-5">Bronze (5.99$/Month)</p>
+            </li>
+            <li class="flex justify-center">
+              <button
+                class="bg-[#070909] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#40ad9d]"
+              >
+                Pre-register
+              </button>
+            </li>
+            <li class="mt-20">Free</li>
+            <br />
+            <li class="mt-5">$15.99</li>
+            <li class="mt-2 mb-4">$3.99</li>
+            <br />
+            <li class="mt-5">Free</li>
+            <li class="mt-2 mb-10">Free</li>
+            <li class="mt-10">Free</li>
+            <li class="mt-2">$2.99</li>
+            <li class="mt-2">Free</li>
+            <li class="mt-2">$6.99</li>
+          </ul>
+        </div>
+        <div
+          class="text-white bg-gradient-to-r from-[#2AB39A] to-[#124D42] basis-1/4 rounded-2xl p-5 mt-5"
+        >
+          <ul>
+            <li class="mb-4 flex items-center">
+              <img
+                src="./assets/pricing/silver.svg"
+                alt=""
+                style="display: inline-block; margin-right: 10px"
+              />
+              <p class="text-xm text-white mb-5">Silver (9.99$/Month)</p>
+            </li>
+            <li class="flex justify-center">
+              <button
+                class="bg-[#070909] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#40ad9d]"
+              >
+                Pre-register
+              </button>
+            </li>
+            <li class="mt-20">Free</li>
+            <br />
+            <li class="mt-5">$9.99</li>
+            <li class="mt-2 mb-4">$2.99</li>
+            <br />
+            <li class="mt-5">Free</li>
+            <li class="mt-2 mb-10">Free</li>
+            <li class="mt-10">Free</li>
+            <li class="mt-2">$1.99</li>
+            <li class="mt-2">Free</li>
+            <li class="mt-2">$3.99</li>
+          </ul>
+        </div>
+        <div
+          class="text-white bg-gradient-to-r from-[#373f3e] to-[#101816] basis-1/4 rounded-2xl p-5 mt-5"
+        >
+          <ul>
+            <li class="mb-4 flex items-center">
+              <img
+                src="./assets/pricing/platinum.svg"
+                alt=""
+                style="display: inline-block; margin-right: 10px"
+              />
+              <p class="text-xm text-white mb-5">Platinum (18.99$/Month)</p>
+            </li>
+            <li class="flex justify-center">
+              <button
+                class="bg-[#070909] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#40ad9d]"
+              >
+                Pre-register
+              </button>
+            </li>
+            <li class="mt-20">Free</li>
+            <br />
+            <li class="mt-5">Free</li>
+            <li class="mt-2 mb-4">Free</li>
+            <br />
+            <li class="mt-5">Free</li>
+            <li class="mt-2 mb-10">Free</li>
+            <li class="mt-10">Free</li>
+            <li class="mt-2">$0.99</li>
+            <li class="mt-2">Free</li>
+            <li class="mt-2">$1.99</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies -->
+
+    <section class="justify-center items-center bg-black content-center mt-10">
+      <div
+        name="holder"
+        class="flex flex-col lg:flex lg:flex-wrap md:flex md:flex-col mx-6 lg:mx-12 md:mx-6 justify-center place-content-center space-between space-between text-white font-extrabold"
+      >
+        <h1
+          class="text-2xl text-center justify-center items-center place-content-center space-between text-white font-extrabold px-5"
+        >
+          Our <b class="text-[#2AB39A]">technologie</b> refer to the most robust
+          <b class="text-[#2AB39A]">protocols</b>
+        </h1>
+        <div class="w-full lg:w-full md:w-full">
+          <div
+            class="bg-gradient-to-r from-[#2AB39A] to-[#124D42] rounded-2xl mt-6 py-6 mb-4"
+          >
+            <img
+              src="./assets/technologies/token.svg"
+              class="flex w-auto h-auto mx-6"
+            />
+            <h4 class="mt-5 font-bold mx-4">Tokenization</h4>
+            <p class="mt-4 font-light mx-4">
+              Apple Pay and Google Pay use tokenization to secure transactions.
+              Unique tokens replace actual card details, enhancing security by
+              safeguarding sensitive information.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex lg:flex-row md:flex md:flex-row"
+        >
+          <div
+            class="w-full lg:w-[55%] md:w-[55%] bg-gradient-to-r from-[#35B2AA] to-[#2DFFF1] rounded-2xl mr-6 mb-4 py-6"
+          >
+            <img
+              src="./assets/technologies/crypt.svg"
+              class="flex w-auto h-auto mx-6"
+            />
+            <h4 class="mt-5 font-bold mx-4">End-to-end encryption</h4>
+            <p class="mt-4 font-light mx-4">
+              Complete protection of your data from creation to final
+              destination.
+            </p>
+          </div>
+          <div
+            class="w-full lg:w-[45%] md:w-[40%] bg-[#2D7064] rounded-2xl mb-4 py-6"
+          >
+            <img
+              src="./assets/technologies/print.svg"
+              class="flex w-auto h-auto mt-6 mx-6"
+            />
+            <h4 class="mt-5 font-bold mx-4">Biometric Identication</h4>
+            <p class="mt-4 font-light mb-6 mx-4">
+              Fingerprints or facial recognition for reliable identification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- form -->
+    <section
+      id="sign-in"
+      class="flex flex-col justify-center items-center content-center"
+    >
+      <div
+        name="holder"
+        class="flex flex-col space-between mt-5 mx-12 bg-transparent rounded-3xl w-full md:w-50 lg:w-50"
+      >
+        <h1
+          class="text-2xl text-center justify-center items-center place-content-center space-between text-white font-extrabold px-5"
+        >
+          <b class="text-[#2AB39A]">Join</b> our waiting list!
+        </h1>
+        <p class="mt-4 text-center text-xs px-10 font-light text-white">
+          Take advantage of your chance to be among the first to benefit from
+          our exclusive services. Enter your email address and last name below.
+        </p>
+        <div class="flex flex-col items-center mt-4 text-white px-6">
+          <div class="flex flex-col items-start bg-transparent rounded-lg p-4">
+            <form class="flex flex-col items-start">
+              <div class="flex flex-row">
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name*"
+                  class="w-full p-2 rounded-lg"
+                  required
+                />
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last Name*"
+                  class="w-full p-2 rounded-lg ml-2"
+                  required
+                />
+              </div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email*"
+                class="w-full p-2 rounded-lg mt-2"
+                required
+              />
+              <button
+                class="bg-[#2AB39A] text-white font-medium px-4 py-1.5 rounded-full hover:bg-[#099887] mt-4 mx-auto"
+              >
+                Pre-register
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex justify-center">
+      <div
+        class="flex flex-col text-black mt-10 justify-center place-content-center space-between w-[70%] bg-gradient-to-br from-[#2AB39A] to-[#158EA9] items-center rounded-3xl md:w-50 lg:w-50"
+      >
+        <h1 class="font-bold text-xl mt-4">Explore Sky Bank</h1>
+        <p class="text-center mt-4 font-light text-sm">
+          The financial platform dedicated to the Haitian diaspora, combining
+          advanced technology, family connection and stimulating development in
+          Haiti.
+        </p>
+        <div class="flex items-center mt-4 mb-4">
+          <button
+            class="bg-[#f8f8f8] text-black font-medium px-4 py-1.5 rounded-full hover:bg-[#5f7377]"
+          >
+            Pre-register
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function onToggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        const body = document.querySelector("body");
+        navLinks.classList.toggle("top-[1%]");
+        body.classList.toggle("overflow-hidden");
+      }
+    </script>
+
+    <hr class="w-full mt-5 border-[#2AB39A] border-2" />
+    <footer class="ftr">
+      <div
+        class="flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between md:flex md:flex-row md:justify-between mx-12 md:mx-1"
+      >
+        <img class="w-40 h-20" src="./assets/logo.png" alt="... md:" />
+        <ul
+          class="flex flex-col items-center gap-4 justify-center lg:flex-row lg:items-center lg:text-center md:flex-row md:items-center md:text-center"
+        >
+          <li>
+            <a class="text-white" href="#">Why Us?</a>
+          </li>
+          <li>
+            <a class="text-white" href="#">Advantages</a>
+          </li>
+          <li>
+            <a class="text-white" href="#">Our Values</a>
+          </li>
+          <li>
+            <a class="text-white" href="#">Partners</a>
+          </li>
+          <li>
+            <a class="text-white" href="#">Pricing</a>
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="text-gray-500 text-xs flex-row items-center transition hover:opacity-75 mt-6 lg:mt-0 md:mt-0"
+        >
+          Copyright © 2024 - SkYBANK
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
