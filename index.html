@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth focus:scroll-auto scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,11 +11,7 @@
     />
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>SKY BANK</title>
-    <link
-      rel="shortcut icon"
-      type="x-icon"
-      href="./assets/icons/Favicon.svg"
-    />
+    <link rel="shortcut icon" type="x-icon" href="./assets/icons/Favicon.svg" />
   </head>
 
   <body class="font-[Poppins] bg-black h-screen">
@@ -35,28 +31,30 @@
             class="flex md:flex-row flex-col md:items-center md:text-sm md:gap-[2vw] gap-4 bg-transparant"
           >
             <li>
-              <a class="hover:text-[#2AB39A]" href="#">Why Us?</a>
+              <a class="hover:text-[#2AB39A]" href="#Why-Us">Why Us?</a>
             </li>
             <li>
-              <a class="hover:text-[#2AB39A]" href="#">Advantages</a>
+              <a class="hover:text-[#2AB39A]" href="#Advantages">Advantages</a>
             </li>
             <li>
-              <a class="hover:text-[#2AB39A]" href="#">Our Values</a>
+              <a class="hover:text-[#2AB39A]" href="#Values">Our Values</a>
             </li>
             <li>
-              <a class="hover:text-[#2AB39A]" href="#">Partners</a>
+              <a class="hover:text-[#2AB39A]" href="#Partners">Partners</a>
             </li>
             <li>
-              <a class="hover:text-[#2AB39A]" href="#">Pricing</a>
+              <a class="hover:text-[#2AB39A]" href="#Pricing">Pricing</a>
             </li>
           </ul>
         </div>
         <div class="flex items-center gap-6">
-          <button
-            class="bg-[#2AB39A] text-white px-5 py-2 rounded-full hover:bg-[#87ACEC]"
-          >
-            Sign in
-          </button>
+          <a href="#sign-in">
+            <button
+              class="bg-[#2AB39A] text-white px-5 py-2 rounded-full hover:bg-[#87ACEC]"
+            >
+              Sign in
+            </button>
+          </a>
           <ion-icon
             onclick="onToggleMenu()"
             name="menu"
@@ -92,7 +90,7 @@
       </div>
     </section>
 
-    <section class="flex justify-center">
+    <section id="Why-Us" class="flex justify-center">
       <div
         class="flex flex-col justify-center place-content-center mt-4 mx-12 w-full md:w-50 lg:w-50"
       >
@@ -111,7 +109,7 @@
       </div>
     </section>
 
-    <section class="flex justify-center lg:mx-12">
+    <section id="Advantages" class="flex justify-center lg:mx-12">
       <div
         name="holder"
         class="flex flex-col mt-5 bg-transparant rounded-3xl w-full md:w-full lg:w-full lg:mt-16 md:mt-16"
@@ -155,7 +153,7 @@
       </div>
     </section>
 
-    <section class="flex justify-center lg:mx-12">
+    <section id="Values" class="flex justify-center lg:mx-12">
       <div
         name="holder"
         class="flex flex-col space-between mt-5 mx-12 rounded-3xl w-full md:w-full lg:w-full md:mt-16"
@@ -205,6 +203,7 @@
     </section>
 
     <section
+      id="Partners"
       class="flex flex-col justify-center items-center content-center bg-transparant lg:mx-12"
     >
       <h1 class="text-2xl text-center text-white font-extrabold mt-10">
@@ -237,6 +236,7 @@
 
     <!-- Pricing Mobile version -->
     <section
+      id=""
       class="flex flex-col justify-center items-center content-center lg:hidden"
     >
       <div
@@ -444,7 +444,7 @@
     </section>
 
     <!-- Pricing Deskrop version -->
-    <section class="w-full lg:flex lg:flex-col hidden">
+    <section id="Pricing" class="w-full lg:flex lg:flex-col hidden">
       <h1 class="text-2xl text-center text-white font-extrabold w-full">
         Our <b class="text-[#2AB39A]">Pricing</b> package
       </h1>
@@ -635,7 +635,10 @@
     </section>
 
     <!-- form -->
-    <section class="flex flex-col justify-center items-center content-center">
+    <section
+      id="sign-in"
+      class="flex flex-col justify-center items-center content-center"
+    >
       <div
         name="holder"
         class="flex flex-col space-between mt-5 mx-12 bg-transparent rounded-3xl w-full md:w-50 lg:w-50"
@@ -709,7 +712,7 @@
       function onToggleMenu() {
         const navLinks = document.querySelector(".nav-links");
         const body = document.querySelector("body");
-        navLinks.classList.toggle("top-[9%]");
+        navLinks.classList.toggle("top-[1%]");
         body.classList.toggle("overflow-hidden");
       }
     </script>
